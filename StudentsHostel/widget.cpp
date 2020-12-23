@@ -50,7 +50,6 @@ void Widget::on_InfoUser_clicked()
 void Widget::on_LogOut_clicked()
 {
          emit LogOut();
-         this->resize(400,300);
 }
 
 void Widget::on_ManagePersonnal_clicked()

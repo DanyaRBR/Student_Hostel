@@ -12,9 +12,8 @@ authorization::authorization(QWidget *parent) :
     ui(new Ui::authorization)
 {
     ui->setupUi(this);
+    this->setGeometry(QRect(0, 0, 800, 250));
     setWindowTitle(Config::Name);
-    this->resize(400,300);
-
     ui->login->setValidator( new QRegExpValidator( QRegExp( "[A-Za-zА-Яа-я]{20}" ) ));
     ui->passw->setValidator( new QRegExpValidator( QRegExp( "[0-9]{8}" ) ));
 

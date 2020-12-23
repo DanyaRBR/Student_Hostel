@@ -12,8 +12,8 @@ Signals::Signals(QWidget *parent)
     : QWidget(parent),
       m_currentWidget(nullptr)
 {
-
-    if (!QFile(Config::BinOfStudent).exists()||!QFile(Config::BinOfPersonnel).exists())
+    setWindowTitle(Config::Name);
+    if (!QFile(Config::BinOfPersonnel).exists())
     {
         m_currentWidget = new Registration(this);
         this->resize(400,300);
